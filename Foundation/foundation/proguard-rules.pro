@@ -72,8 +72,8 @@
     public static final ** CREATOR;
 }
 
-#-keep class class com.sponia.foundation.net.** { *; }
--keep class class com.sponia.foundation.bean.** { *; }
+#-keep class class com.geocentric.foundation.net.** { *; }
+-keep class class com.geocentric.foundation.bean.** { *; }
 -keep public class * implements java.io.Serializable {*;}
 
 -keep public class * extends android.app.Activity

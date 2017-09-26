@@ -6,7 +6,7 @@ android {
     buildToolsVersion "25.0.0"
 
     defaultConfig {
-//        applicationId "com.sponia.foundation"
+//        applicationId "com.geocentric.foundation"
         minSdkVersion 14
         targetSdkVersion 23
 //        versionCode 1
