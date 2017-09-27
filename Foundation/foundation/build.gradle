@@ -1,5 +1,28 @@
 apply plugin: 'com.android.library'
-//apply plugin: 'com.android.application'
+
+ext {
+    bintrayRepo = 'foundation'
+    bintrayName = 'foundation'
+
+    publishedGroupId = 'com.zhoushibo'
+    libraryName = 'foundation'
+    artifact = 'foundation'
+
+    libraryDescription = 'A base library for android project.'
+
+    siteUrl = 'https://github.com/ptyagicodecamp/webview-overlay'
+    gitUrl = 'https://github.com/ptyagicodecamp/webview-overlay.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'idyllchow'
+    developerName = 'idyllchow'
+    developerEmail = 'idyllzhou@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -15,8 +38,6 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-//            minifyEnabled true
-//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
     lintOptions {
@@ -55,3 +76,6 @@ dependencies {
     compile 'com.squareup.retrofit2:converter-gson:2.0.2'
     compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
 }
+
+//apply from: ''
+
