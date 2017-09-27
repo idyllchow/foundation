@@ -20,12 +20,6 @@ import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
  */
 public class NetTask {
 
-    private static IRetrofitListener retrofitListener;
-
-    public NetTask(com.geocentric.foundation.net.IRetrofitListener retrofitListener) {
-        this.retrofitListener = retrofitListener;
-    }
-
     public static ApiService getDefault(final boolean needToken) {
         HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
         logging.setLevel(HttpLoggingInterceptor.Level.BODY);

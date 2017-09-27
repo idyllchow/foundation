@@ -5,6 +5,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.ColorFilter;
 import android.graphics.Paint;
+import android.graphics.PixelFormat;
 import android.graphics.RectF;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
@@ -12,7 +13,6 @@ import android.graphics.drawable.NinePatchDrawable;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
 
-import com.geocentric.foundation.BaseActivity;
 import com.geocentric.foundation.common.Common;
 
 import java.io.InputStream;
@@ -27,10 +27,8 @@ public class DrawableUtil {
     /**
      * 绘制圆角矩形
      *
-     * @param color
-     *            背景色
-     * @param corner
-     *            圆角尺寸
+     * @param color  背景色
+     * @param corner 圆角尺寸
      * @return
      */
     public static final Drawable createRoundRectDrawable(final int color,
@@ -49,7 +47,7 @@ public class DrawableUtil {
 
             @Override
             public int getOpacity() {
-                return 0;
+                return PixelFormat.UNKNOWN;
             }
 
             @Override
@@ -71,8 +69,7 @@ public class DrawableUtil {
     /**
      * 绘制矩形
      *
-     * @param color
-     *            背景色
+     * @param color 背景色
      * @return
      */
     public static final Drawable createRectDrawable(final int color) {
@@ -90,7 +87,7 @@ public class DrawableUtil {
 
             @Override
             public int getOpacity() {
-                return 0;
+                return PixelFormat.UNKNOWN;
             }
 
             @Override
@@ -112,8 +109,7 @@ public class DrawableUtil {
     /**
      * 绘制圆形
      *
-     * @param color
-     *            背景色
+     * @param color 背景色
      * @return
      */
     public static final Drawable createCircleDrawable(final int color) {
@@ -131,7 +127,7 @@ public class DrawableUtil {
 
             @Override
             public int getOpacity() {
-                return 0;
+                return PixelFormat.UNKNOWN;
             }
 
             @Override
@@ -157,10 +153,10 @@ public class DrawableUtil {
      * @param path
      * @return
      */
-    public static Drawable getDrawableFromFile(String path) {
+    public static Drawable getDrawableFromFile(Class clazz, String path) {
         try {
             Drawable drawable = null;
-            InputStream inputStream = getFileStream(path);
+            InputStream inputStream = getFileStream(clazz, path);
             if (path.endsWith("9.png")) {
                 TypedValue value = new TypedValue();
                 value.density = TypedValue.DENSITY_DEFAULT;
@@ -170,7 +166,7 @@ public class DrawableUtil {
                         path);
                 if (drawable == null) {
                     drawable = NinePatchDrawable.createFromStream(
-                            getFileStream(path), null);
+                            getFileStream(clazz, path), null);
                 }
                 // return
                 // NinePatchDrawable.createFromStream(getFileStream(path),
@@ -193,11 +189,11 @@ public class DrawableUtil {
             return drawable;
         } catch (Exception e) {
             return NinePatchDrawable
-                    .createFromStream(getFileStream(path), null);
+                    .createFromStream(getFileStream(clazz, path), null);
         }
     }
 
-    public static InputStream getFileStream(String paramString) {
-        return BaseActivity.class.getResourceAsStream(paramString);
+    public static InputStream getFileStream(Class clazz, String paramString) {
+        return clazz.getResourceAsStream(paramString);
     }
 }

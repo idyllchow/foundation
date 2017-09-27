@@ -22,7 +22,7 @@ import java.util.Queue;
  * @description 自定义toast, 显示最后一条
  * @date 16/4/10
  */
-public class SponiaBaseToast {
+public class BaseToast {
 
     private static TextView textView = null;
     private static CountDownTimer timer;
@@ -134,7 +134,7 @@ public class SponiaBaseToast {
             tWidth = LayoutParams.WRAP_CONTENT;
             tHeight = LayoutParams.WRAP_CONTENT;
         } catch (Exception e) {
-            LogUtil.defaultLog("SponiaBaseToast:Common.screenWidth为空");
+            LogUtil.defaultLog("BaseToast:Common.screenWidth为空");
             LogUtil.defaultLog(e);
         }
     }

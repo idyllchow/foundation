@@ -31,7 +31,7 @@ public class SpUtil {
         }
         return defaultSP;
     }
-    
+
     /**
      * 根据指定的SPName,获取特定的SP对象
      *
