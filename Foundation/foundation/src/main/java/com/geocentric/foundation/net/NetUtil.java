@@ -2,7 +2,7 @@ package com.geocentric.foundation.net;
 
 import android.text.TextUtils;
 
-import com.geocentric.foundation.utils.CellphoneUtil;
+import com.geocentric.foundation.utils.DeviceUtil;
 
 import java.net.InetSocketAddress;
 import java.net.Proxy;
@@ -49,15 +49,15 @@ public class NetUtil {
      */
     public static final Proxy getProxy() {
         Proxy proxy = null;
-        switch (CellphoneUtil.checkNetWorkStatus()) {
-            case CellphoneUtil.DIANXINWAP:
+        switch (DeviceUtil.checkNetWorkStatus()) {
+            case DeviceUtil.DIANXINWAP:
                 proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("10.0.0.200", 80));
                 break;
-            case CellphoneUtil.LIANTONGWAP:
-            case CellphoneUtil.YIDONGWAP:
+            case DeviceUtil.LIANTONGWAP:
+            case DeviceUtil.YIDONGWAP:
                 proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("10.0.0.172", 80));
                 break;
-            case CellphoneUtil.WIFI:
+            case DeviceUtil.WIFI:
                 String proHost = android.net.Proxy.getDefaultHost();
                 int proPort = android.net.Proxy.getDefaultPort();
                 if (proHost != null && proPort != -1) {  //设置了代理

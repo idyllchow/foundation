@@ -103,17 +103,6 @@ public class TimeUtil {
         return utc2Local(utcTime, DATE_FORMAT_ALL, DATE_FORMAT_HOUR_MINUTE);
     }
 
-//    /**
-//     * 将当前时间格式化输出至微秒
-//     *
-//     * @return String 当前时间至毫秒2015-02-28-09-24-49
-//     */
-//    public static final String getTimeFormatMSS() {
-//        SimpleDateFormat simpleDataFormat = new SimpleDateFormat(
-//                "yyyy-MM-dd hh:mm:ss.SSS");
-//        return simpleDataFormat.format(new Date(System.currentTimeMillis()));
-//    }
-
     /**
      * 提供时间转化至毫秒的方法
      *
@@ -288,8 +277,7 @@ public class TimeUtil {
             return "";
         }
 
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(
-                "mm:ss");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("mm:ss");
         return simpleDateFormat.format(time);
     }
 

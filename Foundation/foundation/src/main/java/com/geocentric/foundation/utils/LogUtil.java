@@ -2,10 +2,8 @@ package com.geocentric.foundation.utils;
 
 import android.os.Environment;
 import android.util.Log;
-
 import com.geocentric.foundation.common.Common;
 import com.geocentric.foundation.utils.FileUtil.CreateFileFailedException;
-
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Field;
@@ -33,7 +31,7 @@ public class LogUtil {
     /**
      * 日志信息存储路径
      */
-    private static String logPath = Environment.getExternalStorageDirectory()+ "/OpenPlay/stats/log/log.txt";
+    private static String logPath = Environment.getExternalStorageDirectory() + "/OpenPlay/stats/log/log.txt";
 
     public static String getDefaultTag() {
         return defaultTag;
@@ -83,6 +81,7 @@ public class LogUtil {
 
     /**
      * 使用Sponia作为Tag输出日志
+     *
      * @param msg
      */
     public static final void defaultLog(String msg) {
@@ -98,13 +97,10 @@ public class LogUtil {
     }
 
     /**
-     *
      * 异常日志输出,默认输出log.e,根据标志位会决定是否输出至控制台或者记录至SD卡指定文件中
      *
-     * @param tag
-     *            标记
-     * @param throwable
-     *            异常信息
+     * @param tag       标记
+     * @param throwable 异常信息
      */
     public static final void log(String tag, Throwable throwable) {
         logThrowablePrivate(Log.ERROR, tag, throwable);
@@ -131,6 +127,7 @@ public class LogUtil {
 
     /**
      * 日志信息文件路径
+     *
      * @return
      * @throws CreateFileFailedException
      * @throws IOException
@@ -143,17 +140,14 @@ public class LogUtil {
     /**
      * 写入异常信息的log,根据标志位会决定是否输出至控制台或者记录至SD卡指定文件中
      *
-     * @param level
-     *            in(Log.DEBUG,Log.ERROR,Log.INFO,Log.VERBOSE,Log.WARN)
-     * @param tag
-     *            标记
-     * @param throwable
-     *            错误信息
+     * @param level     in(Log.DEBUG,Log.ERROR,Log.INFO,Log.VERBOSE,Log.WARN)
+     * @param tag       标记
+     * @param throwable 错误信息
      */
     private static final void logThrowablePrivate(int level, final String tag,
                                                   final Throwable throwable) {
 
-        if(Common.isReleaseVersion()) {
+        if (Common.isReleaseVersion()) {
             return;
         }
 
@@ -180,7 +174,7 @@ public class LogUtil {
                     break;
             }
         }
-        if (isLogRecord() && CellphoneUtil.isCardExist()) {
+        if (isLogRecord() && DeviceUtil.isCardExist()) {
             // 是否需要将日志输入至指定文件夹
             new Thread(new Runnable() {
 
@@ -198,8 +192,12 @@ public class LogUtil {
         }
     }
 
-    // 打印bean对象的数据，方便调试使用
-    public static String Bean2String(Object bean) {
+    /**
+     * 打印bean对象的数据，方便调试使用
+     * @param bean
+     * @return
+     */
+    public static String bean2String(Object bean) {
         if (bean != null) {
             StringBuilder sb = new StringBuilder();
             Class<?> clazz = bean.getClass();

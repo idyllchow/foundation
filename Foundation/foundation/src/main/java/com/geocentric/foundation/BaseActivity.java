@@ -648,7 +648,7 @@ public class BaseActivity extends FragmentActivity implements IHttpListener, Vie
                 errorStr = getString(com.geocentric.foundation.R.string.error_invitation_code_exception);
                 break;
             case IHttpListener.ERROR_NO_RESOUCE_EXCEPTION:
-                errorStr = getString(com.geocentric.foundation.R.string.error_no_resouce_exception);
+                errorStr = getString(com.geocentric.foundation.R.string.error_no_resource_exception);
                 break;
             case IHttpListener.ERROR_ACCOUNT_ACTIVATION_EXCEPTION:
                 errorStr = getString(com.geocentric.foundation.R.string.error_account_activation_exception);
@@ -667,7 +667,7 @@ public class BaseActivity extends FragmentActivity implements IHttpListener, Vie
                 break;
             //此部分返回码应该和http返回码对应,或者401统一是否返回bean
             case IHttpListener.ERROR_RESOURCE_NOT_FOUND_EXCEPTION:
-                errorStr = getString(com.geocentric.foundation.R.string.error_no_resouce_exception);
+                errorStr = getString(com.geocentric.foundation.R.string.error_no_resource_exception);
                 break;
             case IHttpListener.ERROR_SERVER_EXCEPTION:
                 errorStr = getString(com.geocentric.foundation.R.string.error_server_exception);

@@ -19,7 +19,7 @@ import java.io.File;
  * 需要判断网络连接权限android.permission.ACCESS_NETWORK_STATE
  * @date 15/10/14
  */
-public class CellphoneUtil {
+public class DeviceUtil {
 
     public static final int LIANTONGWAP = 0x0001;// 联通
     public static final int DIANXINWAP = 0x0002;// 电信

@@ -4,7 +4,7 @@ import android.text.TextUtils;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONException;
-import com.geocentric.foundation.utils.CellphoneUtil;
+import com.geocentric.foundation.utils.DeviceUtil;
 import com.qiniu.android.storage.UpCompletionHandler;
 import com.qiniu.android.storage.UploadManager;
 import com.squareup.okhttp.Callback;
@@ -120,7 +120,7 @@ public class NetAction {
      * @param hideErrorMsg 不展示错误信息
      */
     private void okResponse(Request request, final NetMessage netMsg, final boolean hideErrorMsg) {
-        if (CellphoneUtil.checkNetWorkAvailable()) {
+        if (DeviceUtil.checkNetWorkAvailable()) {
             okClient.setConnectTimeout(TIME_OUT, TimeUnit.SECONDS);
             okClient.setReadTimeout(TIME_OUT, TimeUnit.SECONDS);
             okClient.newCall(request).enqueue(new Callback() {
