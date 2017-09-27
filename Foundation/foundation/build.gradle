@@ -10,8 +10,8 @@ ext {
 
     libraryDescription = 'A base library for android project.'
 
-    siteUrl = 'https://github.com/ptyagicodecamp/webview-overlay'
-    gitUrl = 'https://github.com/ptyagicodecamp/webview-overlay.git'
+    siteUrl = 'https://github.com/idyllchow/foundation'
+    gitUrl = 'https://github.com/idyllchow/foundation.git'
 
     libraryVersion = '1.0.0'
 
