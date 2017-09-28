@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 
 ext {
-    bintrayRepo = 'foundation'
+    bintrayRepo = 'maven'
     bintrayName = 'foundation'
 
     publishedGroupId = 'com.zhoushibo'
@@ -77,5 +77,5 @@ dependencies {
     compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
 }
 
-//apply from: ''
-
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
