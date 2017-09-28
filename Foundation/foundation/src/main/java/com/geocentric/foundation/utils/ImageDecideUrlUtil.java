@@ -2,10 +2,6 @@ package com.geocentric.foundation.utils;
 
 import android.text.TextUtils;
 
-/**
- * Created by caolijie on 15/5/26.
- * 根据图片宽度以及原始路径决定图片最终路径
- */
 public class ImageDecideUrlUtil {
 
     static int binarySearch(int[] srcArray, int des, boolean higher) {

@@ -1,11 +1,6 @@
 package com.geocentric.foundation.net;
 
-/**
- * com.geocentric.stats.net
- * 处理http状态码非200的情况，封装的异常类型
- * 15/9/6
- * shibo
- */
+
 public class HttpServiceErrorException extends Exception {
 
 	private static final long serialVersionUID = 1L;

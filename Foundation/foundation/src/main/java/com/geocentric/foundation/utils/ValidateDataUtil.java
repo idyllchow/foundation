@@ -3,12 +3,7 @@ package com.geocentric.foundation.utils;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * @author shibo
- * @packageName com.geocentric.foundation.utils
- * @description 验证各类输入是否合法
- * @date 15/9/25
- */
+
 public class ValidateDataUtil {
 
     //电话号码

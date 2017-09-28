@@ -17,12 +17,6 @@ import android.text.TextUtils;
 
 import java.io.InputStream;
 
-/**
- * @packageName com.geocentric.foundation.utils
- * @description
- * @date 15/9/9
- * @auther shibo
- */
 public final class BitmapUtil {
     private static final Paint paint_comm = new Paint(Paint.ANTI_ALIAS_FLAG);
 

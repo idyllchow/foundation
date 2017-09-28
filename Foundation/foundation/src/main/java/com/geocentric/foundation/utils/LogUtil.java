@@ -8,14 +8,7 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Field;
 
-;
 
-/**
- * @author shibo
- * @packageName com.geocentric.foundation.utils
- * @description 日志管理
- * @date 15/10/8
- */
 public class LogUtil {
     private static final boolean DEBUG = Common.isReleaseVersion() ? false : true;
 

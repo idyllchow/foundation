@@ -3,12 +3,6 @@ package com.geocentric.foundation.net;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-/**
- * @packageName com.sponia.foundationmoudle.bean
- * @description 基础bean
- * @date 15/9/7
- * @auther shibo
- */
 public class BaseBean implements Parcelable {
     public String message;
     public int error_code;

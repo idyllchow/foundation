@@ -13,12 +13,7 @@ import java.io.IOException;
 import retrofit2.adapter.rxjava.HttpException;
 import rx.Subscriber;
 
-/**
- * @author shibo
- * @packageName com.sponia.openplayer.network.api
- * @description
- * @date 16/9/2
- */
+
 public abstract class RxSubscribe<T extends BaseBean> extends Subscriber<T> {
     private Context mContext;
 

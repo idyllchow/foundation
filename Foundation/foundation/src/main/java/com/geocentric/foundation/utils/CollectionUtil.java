@@ -6,12 +6,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 
-/**
- * @author shibo
- * @packageName com.geocentric.foundation.utils
- * @description 集合类操作
- * @date 15/10/14
- */
+
 public class CollectionUtil {
 
     /**

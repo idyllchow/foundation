@@ -5,12 +5,6 @@ import android.view.View;
 
 import com.geocentric.foundation.common.Common;
 
-/**
- * @author shibo
- * @packageName com.geocentric.foundation.utils
- * @description
- * @date 2017/8/1
- */
 
 public class ViewUtil {
 

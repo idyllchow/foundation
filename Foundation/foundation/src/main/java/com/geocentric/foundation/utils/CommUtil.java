@@ -17,12 +17,7 @@ import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
 
-/**
- * @author shibo
- * @packageName com.geocentric.foundation.utils
- * @description 获取应用基本信息类
- * @date 15/9/24
- */
+
 public class CommUtil {
 
     /**

@@ -5,12 +5,7 @@ import android.util.DisplayMetrics;
 
 import com.geocentric.foundation.common.Common;
 
-/**
- * @author shibo
- * @packageName com.geocentric.foundation.utils
- * @description 像素密度类
- * @date 15/9/24
- */
+
 public class DensityUtil {
     private final static DisplayMetrics dm = Common.application.getResources().getDisplayMetrics();
 

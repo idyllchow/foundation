@@ -1,11 +1,5 @@
 package com.geocentric.foundation.view.sweetalert;
 
-/**
- * @author shibo
- * @packageName com.geocentric.uikit.widgets.sweetalert
- * @description
- * @date 15/10/12
- */
 
 import android.content.Context;
 

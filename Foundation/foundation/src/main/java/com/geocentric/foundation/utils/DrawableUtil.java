@@ -17,12 +17,7 @@ import com.geocentric.foundation.common.Common;
 
 import java.io.InputStream;
 
-/**
- * @author shibo
- * @packageName com.geocentric.foundation.utils
- * @description 用于创建各种形状的Drawable
- * @date 16/4/10
- */
+
 public class DrawableUtil {
     /**
      * 绘制圆角矩形

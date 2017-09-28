@@ -5,12 +5,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-/**
- * @packageName com.geocentric.foundation.utils
- * @description 输入输出流
- * @date 15/9/8
- * @auther shibo
- */
 public final class IOStreamUtil {
 
 	/**

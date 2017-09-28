@@ -16,12 +16,7 @@ import com.geocentric.foundation.utils.LogUtil;
 import java.util.LinkedList;
 import java.util.Queue;
 
-/**
- * @author shibo
- * @packageName com.geocentric.foundation.view
- * @description 自定义toast, 显示最后一条
- * @date 16/4/10
- */
+
 public class BaseToast {
 
     private static TextView textView = null;

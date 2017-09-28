@@ -10,12 +10,6 @@ import java.util.HashMap;
 import java.util.Map.Entry;
 
 
-/**
- * com.geocentric.stats.net
- * 网络相关工具类
- * 15/9/7
- * shibo
- */
 public class NetUtil {
 
     /**

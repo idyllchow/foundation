@@ -30,12 +30,7 @@ import java.nio.channels.FileChannel;
 import java.text.DecimalFormat;
 import java.util.UUID;
 
-/**
- * @author shibo
- * @packageName com.geocentric.foundation.utils
- * @description
- * @date 15/10/10
- */
+
 public class FileUtil {
     /**
      * 创建文件 创建文件时，如果文件的父目录不存在 则会自动创建 创建完成后，会校验是否创建成功 若失败则抛出异常

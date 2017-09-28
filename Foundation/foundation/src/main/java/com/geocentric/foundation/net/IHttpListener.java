@@ -1,11 +1,6 @@
 package com.geocentric.foundation.net;
 
-/**
- * com.geocentric.stats.net
- * 网络链接，异常处理封装相关类
- * 15/9/6
- * shibo
- */
+
 public interface IHttpListener {
 
 

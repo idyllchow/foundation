@@ -5,12 +5,7 @@ import android.text.TextUtils;
 import java.math.BigDecimal;
 import java.text.NumberFormat;
 
-/**
- * @author shibo
- * @packageName com.geocentric.foundation.utils
- * @description
- * @date 15/9/29
- */
+
 public class BigDecimalUtil {
 
     // 默认除法运算精度,及即保留小数点多少位

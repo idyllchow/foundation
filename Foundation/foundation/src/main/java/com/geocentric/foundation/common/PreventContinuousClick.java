@@ -4,13 +4,6 @@ import android.os.Handler;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-/**
- * com.geocentric.stats.utils
- * 防止短时间内连续点击处理
- * 15/9/2
- * shibo
-
- */
 public class PreventContinuousClick implements OnClickListener {
 
     private OnClickListener onClickListener;

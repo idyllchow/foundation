@@ -1,11 +1,6 @@
 package com.geocentric.foundation.net;
 
-/**
- * com.geocentric.stats.net
- * 无网络异常
- * 15/9/7
- * shibo
- */
+
 public class NoNetworkActivityException extends Exception {
 
     private static final long serialVersionUID = 1L;

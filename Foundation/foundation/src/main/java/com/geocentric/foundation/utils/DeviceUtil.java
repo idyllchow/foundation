@@ -11,14 +11,7 @@ import com.geocentric.foundation.common.Common;
 
 import java.io.File;
 
-/**
- * @author shibo
- * @packageName com.geocentric.stats.utils
- * @description 手机相关信息检查
- * 提供了网络状态的检查与SD卡的检查
- * 需要判断网络连接权限android.permission.ACCESS_NETWORK_STATE
- * @date 15/10/14
- */
+
 public class DeviceUtil {
 
     public static final int LIANTONGWAP = 0x0001;// 联通

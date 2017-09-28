@@ -9,12 +9,6 @@ import android.view.animation.TranslateAnimation;
 
 import com.geocentric.foundation.common.Common;
 
-/**
- * @author shibo
- * @packageName com.geocentric.foundation.utils
- * @description
- * @date 16/2/3
- */
 public class AnimationUtil {
     /***
      * 从屏幕的左边进入

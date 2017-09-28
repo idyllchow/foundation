@@ -9,12 +9,7 @@ import java.lang.reflect.Type;
 import retrofit2.Converter;
 
 
-/**
- * @author shibo
- * @packageName com.geocentric.foundation.net
- * @description
- * @date 16/5/20
- */
+
 public final class FastjsonResponseBodyConverter<T> implements Converter<ResponseBody,T> {
 
     private String charset;

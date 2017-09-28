@@ -4,12 +4,6 @@ import android.widget.Toast;
 
 import com.geocentric.foundation.common.BaseApp;
 
-/**
- * @packageName com.geocentric.foundation.utils
- * @description toast管理类
- * @date 15/9/10
- * @auther shibo
- */
 public class ToastUtil {
 
     /**

@@ -10,12 +10,6 @@ import okhttp3.ResponseBody;
 import retrofit2.Converter;
 import retrofit2.Retrofit;
 
-/**
- * @author shibo
- * @packageName com.openplay.soccerplayer.http.network
- * @description
- * @date 2016/10/27
- */
 
 public class FastJsonConvertFactory extends Converter.Factory{
     @Override

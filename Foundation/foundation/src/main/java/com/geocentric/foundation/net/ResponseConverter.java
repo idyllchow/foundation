@@ -10,12 +10,6 @@ import okio.BufferedSource;
 import okio.Okio;
 import retrofit2.Converter;
 
-/**
- * @author shibo
- * @packageName com.openplay.soccerplayer.http.network
- * @description
- * @date 2016/10/27
- */
 
 public class ResponseConverter<T> implements Converter<ResponseBody, T> {
     private final Type type;

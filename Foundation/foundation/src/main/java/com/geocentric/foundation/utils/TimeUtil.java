@@ -9,12 +9,6 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.TimeZone;
 
-/**
- * @packageName com.geocentric.foundation.utils
- * @description 时间处理类
- * @date 15/9/10
- * @auther shibo
- */
 public class TimeUtil {
 
     private static final String TAG = "TimeUtil";

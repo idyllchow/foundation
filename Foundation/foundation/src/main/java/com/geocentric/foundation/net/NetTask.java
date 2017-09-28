@@ -12,12 +12,6 @@ import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 
-/**
- * @author shibo
- * @packageName com.openplay.soccerplayer.network.api
- * @description
- * @date 16/9/2
- */
 public class NetTask {
 
     public static ApiService getDefault(final boolean needToken) {

@@ -8,13 +8,6 @@ import okhttp3.MediaType;
 import okhttp3.RequestBody;
 import retrofit2.Converter;
 
-/**
- * @author shibo
- * @packageName com.geocentric.openplayer.http
- * @description
- * @date 2016/10/27
- */
-
 public class RequestConverter<T> implements Converter<T, RequestBody> {
 
     @Override

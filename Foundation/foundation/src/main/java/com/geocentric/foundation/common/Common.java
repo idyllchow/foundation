@@ -4,12 +4,6 @@ import android.app.Application;
 import android.content.pm.PackageManager;
 import android.util.DisplayMetrics;
 
-/**
- * @author shibo
- * @packageName com.geocentric.foundation.common
- * @description 通用常量
- * @date 15/9/29
- */
 public final class Common {
 
     /**

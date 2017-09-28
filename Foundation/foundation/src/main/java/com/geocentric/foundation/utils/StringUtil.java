@@ -9,12 +9,7 @@ import java.text.DecimalFormat;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * @author shibo
- * @packageName com.geocentric.foundation.utils
- * @description 字符串工具类
- * @date 16/4/27
- */
+
 public class StringUtil {
     /**
      * 生成金额格式pattern，同时编译正则表达式

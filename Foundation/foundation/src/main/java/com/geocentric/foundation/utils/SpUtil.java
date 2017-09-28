@@ -14,12 +14,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Set;
 
-/**
- * @packageName com.geocentric.foundation.utils
- * @description sp管理类
- * @date 15/9/9
- * @auther shibo
- */
+
 public class SpUtil {
 
     private static SharedPreferences defaultSP = null;
