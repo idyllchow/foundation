@@ -91,7 +91,7 @@ public class DeviceUtil {
 
 
     /**
-     * @功能：获取保存路径
+     * 功能：获取保存路径
      */
     public static String getImagePath(Context context){
         String imageDirString = com.geocentric.foundation.utils.FileUtil.getStorageDirectory() + File.separator + "images";
@@ -105,7 +105,7 @@ public class DeviceUtil {
 
 
     /**
-     * @功能：删除图片
+     * 功能：删除图片
      */
     public static boolean delete(String fName) {
         File f = new File(fName);
@@ -117,7 +117,7 @@ public class DeviceUtil {
     }
 
     /**
-     * @功能： 判断sdcard的状态
+     * 功能： 判断sdcard的状态
      */
     public static boolean isCardExist() {
         String status = Environment.getExternalStorageState();

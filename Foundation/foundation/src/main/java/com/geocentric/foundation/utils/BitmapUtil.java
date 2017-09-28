@@ -21,11 +21,11 @@ public final class BitmapUtil {
     private static final Paint paint_comm = new Paint(Paint.ANTI_ALIAS_FLAG);
 
     /**
-     * @Description 计算图片所占内存大小width * height * perPixelsSize
+     * 计算图片所占内存大小width * height * perPixelsSize
      *
      * @param bitmap
      * @return int
-     * @Description 单位是：byte
+     * 单位是：byte
      */
     public static final int calcBitmapMemorySize(Bitmap bitmap) {
         if (null == bitmap) {
@@ -50,7 +50,7 @@ public final class BitmapUtil {
 
     /**
      *
-     * @Description 图片缩放,会返回newWidth*newHeight大小的图片，会将传入的bitmap进行recycle
+     * 图片缩放,会返回newWidth*newHeight大小的图片，会将传入的bitmap进行recycle
      *
      * @param bitmap
      *            需要缩放的图片
@@ -86,7 +86,7 @@ public final class BitmapUtil {
 
     /**
      *
-     * @Description
+     *
      *              图片缩放,会返回(Width*newWidth)*(Height*newHeight)大小的图片，会将传入的bitmap进行recycle
      *              ，newWidth、newHeight参数必须大于0
      * @param bitmap
@@ -121,7 +121,7 @@ public final class BitmapUtil {
     }
 
     /**
-     * @Description
+     *
      *              图片缩放,会返回newWidth*newHeight大小的图片，不会将传入的bitmap进行recycle，参数newWidth
      *              、newHeight参数必须大于0
      *
@@ -155,7 +155,7 @@ public final class BitmapUtil {
     }
 
     /**
-     * @Description 图片缩放,会返回(Width*newWidt)*(Height*newHeight)大小的图片，
+     * 图片缩放,会返回(Width*newWidt)*(Height*newHeight)大小的图片，
      *              不会将传入的bitmap进行recycle，参数newWidth、newHeight参数必须大于0
      *
      * @param bitmap
@@ -188,7 +188,7 @@ public final class BitmapUtil {
     }
 
     /**
-     * @Description 两张一样大小的图片合并成一张图片,从左上角开始合成，如果不一样大小，会按照上面的bitmap大小尺寸进行合成
+     * 两张一样大小的图片合并成一张图片,从左上角开始合成，如果不一样大小，会按照上面的bitmap大小尺寸进行合成
      *
      * @param bmp1
      *            在底下的图片
@@ -216,7 +216,7 @@ public final class BitmapUtil {
     }
 
     /**
-     * @Description 将bitmap切成圆形图
+     * 将bitmap切成圆形图
      *
      * @param bitmap
      * @return Bitmap
@@ -250,7 +250,7 @@ public final class BitmapUtil {
     }
 
     /**
-     * @Description 将bitmap按照传入的弧度切成圆形图
+     * 将bitmap按照传入的弧度切成圆形图
      *
      * @param bitmap
      * @return Bitmap
@@ -278,7 +278,7 @@ public final class BitmapUtil {
     }
 
     /**
-     * @Description 将图片周围用透明的像素补全成正方形
+     * 将图片周围用透明的像素补全成正方形
      *
      * @param bitmap
      * @return Bitmap
@@ -312,7 +312,7 @@ public final class BitmapUtil {
     }
 
     /**
-     * @Description 将图片周围用传入的透明颜色值像素补全成正方形
+     * 将图片周围用传入的透明颜色值像素补全成正方形
      * @param bitmap
      * @param color
      *            传入的透明颜色值
@@ -349,8 +349,6 @@ public final class BitmapUtil {
     }
 
     /**
-     * @Description 已最省内存的方式读取图片资源文件，但这样读出来的图片是图片的原始大小，不会根据机器的分辨率来自动适应。
-     *
      * @param context
      * @param resId
      * @return Bitmap
@@ -361,14 +359,6 @@ public final class BitmapUtil {
     }
 
     /**
-     * @Description 以最省内存的方式读取图片资源文件通过指定的配置项。
-     *              尽量不要使用setImageBitmap或setImageResource或BitmapFactory
-     *              .decodeResource()方法，最终都会通过Java层的createBitmap方法，则会消耗更多的内存。
-     *              但是这种方式读出来的图片大小与原始图片大小是一样的，与在res下的位置无关。
-     *              如果要与Bitmapfactory.decodeFile读出图片大小一致
-     *              ，则需要对读出的图片做缩放＝getResources().getDisplayMetrics().densityDpi
-     *              </br> 文件所属drawable下的dpi drawable、drawable-mdpi为160dpi
-     *              ，drawable-ldpi为120dpi,drawable－hdpi为240dpi,drawable为320dpi
      *
      * @param context
      * @param resId
@@ -395,7 +385,7 @@ public final class BitmapUtil {
     }
 
     /**
-     * @Description
+     *
      *              以最省内存的方式读取图片资源文件，不带alpha通道。较之readBitmapFromResWithLowerMemory更省内存
      *              ， 但是读出的图片无透明通道,适合背景图片。
      *
@@ -416,7 +406,7 @@ public final class BitmapUtil {
     }
 
     /**
-     * @Description 以最省内存的方式读取图片资源文件,携带缩放比例inSampleSize，
+     * 以最省内存的方式读取图片资源文件,携带缩放比例inSampleSize，
      * @param context
      * @param resId
      *            本地资源的id
@@ -432,7 +422,7 @@ public final class BitmapUtil {
     }
 
     /**
-     * @Description 最省内存的方式读取本地资源的图片
+     * 最省内存的方式读取本地资源的图片
      * @param context
      * @param resId
      *            本地资源的id
@@ -449,7 +439,7 @@ public final class BitmapUtil {
     }
 
     /***
-     * @Description 设置图片倒影生成带倒影的bitmap，不会将传入的bitmap进行recycle
+     * 设置图片倒影生成带倒影的bitmap，不会将传入的bitmap进行recycle
      * @param originalBitmap
      * @param spacing
      *            原图与倒影的间距
