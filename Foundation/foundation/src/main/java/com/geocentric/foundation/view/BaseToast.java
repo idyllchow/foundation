@@ -9,9 +9,9 @@ import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.geocentric.foundation.utils.DensityUtil;
-import com.geocentric.foundation.utils.DrawableUtil;
-import com.geocentric.foundation.utils.LogUtil;
+import com.geocentric.foundation.util.DensityUtils;
+import com.geocentric.foundation.util.DrawableUtils;
+import com.geocentric.foundation.util.LogUtils;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -123,14 +123,14 @@ public class BaseToast {
      */
     private static void setParametersInit() {
         try {
-            drawable = DrawableUtil.createRoundRectDrawable(0x90000000,
-                    DensityUtil.dip2px(5));
+            drawable = DrawableUtils.createRoundRectDrawable(0x90000000,
+                    DensityUtils.dip2px(5));
 //			tWidth = Common.getScreenWidth();
             tWidth = LayoutParams.WRAP_CONTENT;
             tHeight = LayoutParams.WRAP_CONTENT;
         } catch (Exception e) {
-            LogUtil.defaultLog("BaseToast:Common.screenWidth为空");
-            LogUtil.defaultLog(e);
+            LogUtils.defaultLog("BaseToast:Common.screenWidth为空");
+            LogUtils.defaultLog(e);
         }
     }
 
@@ -147,16 +147,16 @@ public class BaseToast {
 
         LinearLayout linearLayout = new LinearLayout(ctx);
         linearLayout.setGravity(Gravity.CENTER);
-        linearLayout.setPadding(DensityUtil.dip2px(10), DensityUtil.dip2px(10),
-                DensityUtil.dip2px(10), DensityUtil.dip2px(10));
+        linearLayout.setPadding(DensityUtils.dip2px(10), DensityUtils.dip2px(10),
+                DensityUtils.dip2px(10), DensityUtils.dip2px(10));
         LayoutParams lp = new LayoutParams(tWidth, tHeight);
 
         textView = new TextView(ctx);
         textView.setTextSize(16);
         textView.setTextColor(0xffffffff);
         textView.setBackgroundDrawable(drawable);
-        textView.setPadding(DensityUtil.dip2px(20), DensityUtil.dip2px(10),
-                DensityUtil.dip2px(20), DensityUtil.dip2px(10));
+        textView.setPadding(DensityUtils.dip2px(20), DensityUtils.dip2px(10),
+                DensityUtils.dip2px(20), DensityUtils.dip2px(10));
         textView.setGravity(Gravity.CENTER);
 
         linearLayout.addView(textView, lp);

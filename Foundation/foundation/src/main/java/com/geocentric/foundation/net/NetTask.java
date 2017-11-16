@@ -1,6 +1,6 @@
 package com.geocentric.foundation.net;
 
-import com.geocentric.foundation.utils.LogUtil;
+import com.geocentric.foundation.util.LogUtil;
 
 import java.io.IOException;
 

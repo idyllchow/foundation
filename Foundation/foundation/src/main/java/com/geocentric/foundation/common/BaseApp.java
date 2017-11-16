@@ -4,7 +4,11 @@ import android.app.Application;
 
 public class BaseApp extends Application {
 
-    public static Application baseApp;
+    private static BaseApp baseApp;
+
+    public static BaseApp getInstance() {
+        return baseApp;
+    }
 
     @Override
     public void onCreate() {

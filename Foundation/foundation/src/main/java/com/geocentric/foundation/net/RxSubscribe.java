@@ -5,8 +5,8 @@ import android.text.TextUtils;
 
 import com.alibaba.fastjson.JSON;
 import com.geocentric.foundation.R;
-import com.geocentric.foundation.utils.DeviceUtil;
-import com.geocentric.foundation.utils.LogUtil;
+import com.geocentric.foundation.util.DeviceUtils;
+import com.geocentric.foundation.util.LogUtils;
 
 import java.io.IOException;
 
@@ -49,7 +49,7 @@ public abstract class RxSubscribe<T extends BaseBean> extends Subscriber<T> {
 
     @Override
     public void onError(Throwable e) {
-        LogUtil.defaultLog(e);
+        LogUtils.defaultLog(e);
         String errMsg = "";
         if(e instanceof HttpException){
             try {
@@ -67,7 +67,7 @@ public abstract class RxSubscribe<T extends BaseBean> extends Subscriber<T> {
 
     protected void _onError(String message) {
         //网络判断
-        if (!DeviceUtil.checkNetWorkAvailable()) {
+        if (!DeviceUtils.checkNetWorkAvailable()) {
             message = mContext.getResources().getString(R.string.network_error);
         }
         if (!TextUtils.isEmpty(message)) {
